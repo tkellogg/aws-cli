@@ -66,6 +66,7 @@ from awscli.customizations.kms import register_fix_kms_create_grant_docs
 from awscli.customizations.route53 import register_create_hosted_zone_doc_fix
 from awscli.customizations.codecommit import initialize as codecommit_init
 from awscli.customizations.iot_data import register_custom_endpoint_note
+from awscli.customizations import iot
 
 
 def awscli_initialize(event_handlers):
@@ -133,3 +134,4 @@ def awscli_initialize(event_handlers):
     register_modify_put_configuration_recorder(event_handlers)
     codecommit_init(event_handlers)
     register_custom_endpoint_note(event_handlers)
+    iot.register_customizations(event_handlers)
