@@ -199,7 +199,7 @@ class GenerateCertsCommand(BasicCommand):
 			'\n'
 			'Now you\'re ready to get started. Try running this command:\n'
 			'\n'
-			'    publish{1} -t some/topic -m "AWS IoT is fun!" -d\n'
+			'    publish{1} -t some/topic -m "AWS IoT is fun" -d\n'
 			'\n'
 			'At any point, use the --help option on publish{1} or subscribe{1} '
 			'to get a full listing of options that mosquitto_pub and/or mosquitto_sub '
