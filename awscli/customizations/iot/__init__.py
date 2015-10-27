@@ -1,3 +1,15 @@
+# Copyright 2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License"). You
+# may not use this file except in compliance with the License. A copy of
+# the License is located at
+#
+#     http://aws.amazon.com/apache2.0/
+#
+# or in the "license" file accompanying this file. This file is
+# distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
+# ANY KIND, either express or implied. See the License for the specific
+# language governing permissions and limitations under the License.
 import os, platform, stat
 from awscli.customizations.commands import BasicCommand
 
@@ -193,9 +205,10 @@ class GenerateCertsCommand(BasicCommand):
 			' * subscribe{1} - a script to help you subscribe to MQTT topics.\n'
 			'\n'
 			'The publish{1} and subscribe{1} scripts are just thin wrappers '
-			'around mosquitto_pub and mosquitto_sub, respectively. Mosquitto is '
-			'a popular MQTT command-line client. You can absolutely use these '
-			'scripts as a guide to use any other MQTT client that you want.\n'
+			'around mosquitto_pub and mosquitto_sub, respectively. Eclipse '
+			'Mosquitto (http://www.eclipse.org/mosquitto/) is a popular MQTT '
+			'command-line client. You can absolutely use these scripts as a '
+			'guide to use any other MQTT client that you want.\n'
 			'\n'
 			'Now you\'re ready to get started. Try running this command:\n'
 			'\n'
